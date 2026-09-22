@@ -1,0 +1,51 @@
+generated: '2026-09-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://developer.sma.de/api-plans
+sources:
+- https://developer.sma.de/api-plans
+name: SMA Solar Technology pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Monitoring API 1‑19 kWac
+  price_text: 12 €
+  price: 12
+  description: Base‑fee per month for system size 1‑19 kWac
+- name: Monitoring API 20‑99 kWac
+  price_text: 12 €
+  price: 12
+  description: Base‑fee per month for system size 20‑99 kWac
+- name: Monitoring API 100‑499 kWac
+  price_text: 15 €
+  price: 15
+  description: Base‑fee per month for system size 100‑499 kWac
+- name: Monitoring API 500‑999 kWac
+  price_text: 25 €
+  price: 25
+  description: Base‑fee per month for system size 500‑999 kWac
+- name: Monitoring API >1 000 kWac
+  price_text: 65 €
+  price: 65
+  description: Base‑fee per month for system size >1 000 kWac
+- name: Live‑API XS
+  price_text: 100 €
+  price: 100
+  description: Monthly fee for 200 000 Live‑API calls
+- name: Live‑API S
+  price_text: 200 €
+  price: 200
+  description: Monthly fee for 500 000 Live‑API calls
+- name: Live‑API M
+  price_text: 350 €
+  price: 350
+  description: Monthly fee for 1 000 000 Live‑API calls
+- name: Live‑API L
+  price_text: 750 €
+  price: 750
+  description: Monthly fee for 2 500 000 Live‑API calls
+- name: Live‑API XL
+  price_text: 1.250 €
+  price: 1250
+  description: Monthly fee for 5 000 000 Live‑API calls
+docs: https://developer.sma.de/api-plans

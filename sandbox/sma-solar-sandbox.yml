@@ -1,0 +1,16 @@
+generated: '2026-09-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://developer.sma.de/sma-sandbox-apis
+sources:
+- https://developer.sma.de/sma-sandbox-apis
+description: SMA provides a sandbox environment for testing their APIs.
+modes:
+- name: sandbox
+  base_url: https://sandbox.smaapis.de
+  how_to_get_access: Contact SMA to obtain sandbox client credentials. Provide the permission flow you want to test and, for code grant flow,
+    a redirect URL.
+note: No test key prefixes, test cards, amounts, or time‑simulation features are documented on the page. 1 extracted row(s) were dropped because
+  their quote was not on the page.
+docs:
+- https://developer.sma.de/sma-sandbox-apis

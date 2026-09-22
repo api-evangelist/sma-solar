@@ -1,0 +1,34 @@
+generated: '2026-09-22'
+method: probed
+source: pre-flight dossier (docs platform, portal detections) + CNAME chains and response headers of the hosts apis.yml names
+registry: all/0-working/vendors.yml
+areas_vocabulary:
+- documentation
+- developer-portal
+- api-gateway
+- cdn
+- hosting
+- sdk-generation
+- api-collections
+- status-page
+- support
+- community
+- identity
+- mcp-hosting
+vendors:
+- vendor: cloudfront
+  name: Amazon CloudFront
+  area: cdn
+  host: www.sma.de
+  evidence: cname:cloudfront.net
+  signal: cname
+  confidence: high
+  kin_score: []
+checked:
+- 'docs-platform: no-docs-host'
+- www.sma.de (Website)
+- developer.sma.de (Documentation)
+- developer.sma.de (APIReference)
+- developer.sma.de (GettingStarted)
+- developer.sma.de (Support)
+- auth.smaapis.de (baseURL)

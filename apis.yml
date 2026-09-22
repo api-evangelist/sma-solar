@@ -1,23 +1,104 @@
 aid: sma-solar
+
 name: SMA Solar Technology
-description: 'SMA Solar Technology is a company surfaced via the API Evangelist harvest backlog (source:
-  energy) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.sma.de/adobe/dynamicmedia/deliver/dm-aid--316c062b-1b27-4abb-a3d2-11d3c7afa475/sma-solar-technology-16-9.jpg?width=1200&crop=0.0p,3.3p,100.0p,93.3p&quality=85&preferwebp=true
+
+description: "SMA Solar Technology provides inverter and photovoltaic solutions worldwide, offering a portfolio of solar energy products, developer portals, and integration APIs. The company focuses on renewable energy technologies, smart energy management, and supports developers through comprehensive documentation, sandbox environments, and API access control. SMA serves residential, commercial, and utility-scale solar installations, emphasizing sustainability and innovation in solar power generation."
+
 url: https://raw.githubusercontent.com/api-evangelist/sma-solar/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:energy
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-22'
+
 modified: '2026-09-22'
+
 tags:
 - Company
-apis: []
+- Solar
+- Energy
+- Inverters
+- Renewable
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/sma-solar-plans-pricing.yml
+- type: Spectral
+  url: rules/sma-solar-rules.yml
+- type: Sandbox
+  url: sandbox/sma-solar-sandbox.yml
+- type: Compliance
+  url: https://www.sma.de/en/cybersecurity
+- type: Security
+  url: https://www.sma.de/en/cybersecurity/responsible-disclosure
+- type: Conformance
+  url: conformance/sma-solar-conformance.yml
+- type: SecurityTxt
+  url: well-known/sma-solar-security.txt
+- type: SecurityTxt
+  url: well-known/sma-solar-developer-security.txt
+- type: WellKnown
+  url: well-known/sma-solar-well-known.yml
+- type: Vendors
+  url: vendors/sma-solar-vendors.yml
+- type: Newsroom
+  url: https://www.sma.de/newsroom/uebersicht
+- type: TrustCenter
+  url: security/sma-solar-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/sma-solar-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/sma-solar-domain-security.yml
 - type: Website
   url: https://www.sma.de/
+- type: Documentation
+  url: https://developer.sma.de/
+- type: APIReference
+  url: https://developer.sma.de/
+- type: GettingStarted
+  url: https://developer.sma.de/
+- type: Support
+  url: https://developer.sma.de/contact
+
+apis:
+- aid: sma-solar:sma-solar-api
+  name: SMA Solar Technology API
+  description: 'SMA Solar Technology API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-09-22);
+    not the provider''s own document.'
+  humanURL: https://developer.sma.de/fileadmin/content/www.developer.sma.de/docs/JavaScript_Example.js
+  baseURL: https://auth.smaapis.de
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/sma-solar-openapi-generated.yml
+    x-provenance: generated
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal pages are HTML rendered with JavaScript and provide no machine‑readable OpenAPI or other contract.
+  evidence:
+    - url: https://developer.sma.de/sma-apis
+      status: 200
+    - url: https://developer.sma.de/openapi.json
+      status: null
+  checked: 2026-09-22
+x-enrichment:
+  date: '2026-09-22'
+  status: enriched
+  artifacts_added: 13
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

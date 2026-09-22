@@ -1,0 +1,24 @@
+generated: '2026-09-22'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/sma-solar-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: No MCP server was found. The pre-flight posted tools/list to /mcp on api.sma.de, www.sma.de, developer.sma.de, solaracademy.sma.de; verdict
+  absent. Candidate tools below are derived from the 2 operation(s) in the provider's own OpenAPI (2 listed); they describe what a server WOULD
+  expose, not one that exists.
+tools:
+- name: get_oauth2_auth
+  operationId: get_oauth2_auth
+  method: GET
+  path: /oauth2/auth
+  description: Request permission to access a sma users resources.
+- name: post_oauth2_token
+  operationId: post_oauth2_token
+  method: POST
+  path: /oauth2/token
+  description: POST /oauth2/token
