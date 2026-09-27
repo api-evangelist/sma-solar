@@ -26,6 +26,12 @@ tags:
 - Solar
 - Energy
 - Inverters
+- Renewables
+tags_raw:
+- Company
+- Solar
+- Energy
+- Inverters
 - Renewable
 
 maintainers:
@@ -75,17 +81,17 @@ common:
   url: https://developer.sma.de/contact
 
 apis:
-- aid: sma-solar:sma-solar-api
-  name: SMA Solar Technology API
-  description: 'SMA Solar Technology API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-09-22);
-    not the provider''s own document.'
-  humanURL: https://developer.sma.de/fileadmin/content/www.developer.sma.de/docs/JavaScript_Example.js
+- aid: sma-solar:sma-solar-oauth2-api
+  name: SMA Solar Technology Oauth2 API
+  description: The Oauth2 API from SMA Solar Technology — 2 operation(s) for oauth2.
+  humanURL: >-
+    https://developer.sma.de/fileadmin/content/www.developer.sma.de/docs/JavaScript_Example.js
   baseURL: https://auth.smaapis.de
+  tags:
+  - Oauth2
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/sma-solar-openapi-generated.yml
-    x-provenance: generated
-
+    url: openapi/sma-solar-oauth2-api-openapi.yml
 x-coverage:
   state: unreadable
   reason: js-rendered-docs

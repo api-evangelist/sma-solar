@@ -1,0 +1,72 @@
+openapi: 3.2.0
+info:
+  title: SMA Solar Technology Oauth2 API
+  version: '2026-09-22'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-22: 2 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; SMA Solar Technology has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 1
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-22'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developer.sma.de/fileadmin/content/www.developer.sma.de/docs/JavaScript_Example.js
+servers:
+- url: https://auth.smaapis.de
+tags:
+- name: OAuth2
+paths:
+  /oauth2/auth:
+    get:
+      operationId: get_oauth2_auth
+      tags:
+      - OAuth2
+      summary: Request permission to access a sma users resources
+      x-source: https://developer.sma.de/fileadmin/content/www.developer.sma.de/docs/JavaScript_Example.js
+      parameters:
+      - name: client_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: response_type
+        in: query
+        required: true
+        schema:
+          type: string
+        description: code
+      - name: redirect_uri
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: state
+        in: query
+        required: true
+        schema:
+          type: string
+        description: cas
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /oauth2/token:
+    post:
+      operationId: post_oauth2_token
+      tags:
+      - OAuth2
+      summary: POST /oauth2/token
+      x-source: https://developer.sma.de/fileadmin/content/www.developer.sma.de/docs/JavaScript_Example.js
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: javascript
+        snippet: "fetch('https://auth.smaapis.de/oauth2/token',\n            {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'\n                },\n                body: formBody\n            })"
