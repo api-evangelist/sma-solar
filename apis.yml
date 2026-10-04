@@ -88,6 +88,8 @@ apis:
     https://developer.sma.de/fileadmin/content/www.developer.sma.de/docs/JavaScript_Example.js
   baseURL: https://auth.smaapis.de
   tags:
+  - Authentication
+  tags_raw:
   - Oauth2
   properties:
   - type: OpenAPI
