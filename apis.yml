@@ -41,6 +41,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: Pricing
+  url: https://developer.sma.de/api-plans
 - type: Plans
   url: plans/sma-solar-plans-pricing.yml
 - type: Spectral
