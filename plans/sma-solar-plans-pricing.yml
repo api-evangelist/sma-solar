@@ -49,3 +49,70 @@ plans:
   price: 1250
   description: Monthly fee for 5 000 000 Live‑API calls
 docs: https://developer.sma.de/api-plans
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Monitoring API 1‑19 kWac
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Monitoring API 20‑99 kWac
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Monitoring API 100‑499 kWac
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Monitoring API 500‑999 kWac
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Monitoring API >1 000 kWac
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Live‑API XS
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Live‑API S
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Live‑API M
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Live‑API L
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Live‑API XL
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
